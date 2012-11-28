@@ -4,11 +4,8 @@
 # Connectivity
 
 
-#########################################
-# Commands to run apps
-alias run.clojure.repl='java -cp ${CLOJURE_HOME}/clojure.jar clojure.lang.Repl'
-alias run.jlineclojure.repl='java -cp ${CLOJURE_HOME}/jline-0.9.91.jar:${CLOJURE_HOME}/clojure.jar jline.ConsoleRunner clojure.lang.Repl'
-alias run.clojure.script='java -cp ${CLOJURE_HOME}/clojure.jar clojure.main'
+# Make sudo work
+alias sudo='sudo '
 
 
 #########################################
@@ -18,43 +15,16 @@ alias to.temp='cd ${MYTEMP}'
 alias to.downloads='cd ${MYDOWNLOADS}'
 alias to.dropbox='cd ~/Dropbox'
 alias to.desktop='cd ~/Desktop'
-alias to.process='cd ${MYPROCESS}'
 alias to.docs='cd ${MYDOCUMENTS}'
-alias to.clients='cd ~/Documents/AI-Clients-Matthew'
 alias to.code='cd ${MYCODE}'
-alias to.dosug='cd ~/Documents/AI-Clients-Matthew/DOSUG'
 alias to.scratch='cd ${MYSCRATCH}'
-alias to.teach='cd ${MYTEACH}'
-alias to.ppap='cd ~/Documents/AI-Clients-Matthew/Pearson, Addison Wesley/Presentation-Patterns-Book'
-alias to.github='cd ~/Documents/Code/GitHub'
 alias to.homebrew='cd /usr/local/Library'
-
-alias to.gradlecode='cd ~/Documents/Code/Gradle'
-alias to.gradleware='cd ~/Documents/AI-Clients-Archived/Gradleware'
-alias to.gradlebooks='cd ~/Documents/AI-Clients-Archived/Gradleware/Gradle_Books_OReilly_SVN_and_Git_Repos'
-alias to.gradlebook1='cd ~/Documents/AI-Clients-Archived/Gradleware/Gradle_Books_OReilly_SVN_and_Git_Repos/oreilly-gradle-book-1'
-alias to.gradleexamples='cd ~/Documents/AI-Clients-Archived/Gradleware/Gradle_Books_OReilly_SVN_and_Git_Repos/oreilly-gradle-book-examples'
-alias to.gradlesamples='cd ~/Documents/Code/Gradle/gradle_core_git/subprojects/docs/src/samples'
-
-alias to.courses='cd ${MYCOURSES}'
-
-alias to.courses.git='cd ~/Documents/GitHub-Training-Courseware/'
-alias to.courses.git.repos='cd ~/Documents/GitHub-Training-Courseware/repos'
-alias to.courses.git.workshop='cd ${MYCOURSES}/Git/presentations/Git-Workshop'
-alias to.courses.git.examples='cd ${MYCOURSES}/Git/repos/local_repo_examples'
-alias to.courses.git.courseware='cd ${MYCOURSES}/Git/courseware'
-alias to.courses.gradle='cd ~/Documents/Teach/Courses/Gradle-Fundamentals'
-alias to.courses.sonar='cd ~/Documents/Teach/Courses/Sonar'
-alias to.courses.jenkins='cd ~/Documents/Teach/Courses/Jenkins-CI'
 
 alias to.devapps='cd ${MYDEVAPPS}'
 
-
 #################################
 # Simple Program Name Shortening
-alias aq=aquamacs
 alias g=git
-
 
 #############################
 # Utilities
@@ -110,10 +80,6 @@ alias files.usage.user='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v
 # -p Postpend slash to folders
 alias ls='ls -G -h -p '
 alias ll='ls -l -G -h -p '
-
-# Teaching Functions
-alias class.resethello='to.courses.git.repos;cd hellogitworld-bare.git; git push --mirror'
-alias class.simpleprompt='export PS1=" $ "'
 
 #########################################
 # Utility Functions
