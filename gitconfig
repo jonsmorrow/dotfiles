@@ -1,6 +1,6 @@
 [user]
-	name = Matthew McCullough
-	email = matthew@github.com
+  name = Jon Morrow
+  email = jon@morrowmail.com
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -30,14 +30,13 @@
 
 [gui]
 	fontdiff = -family Monaco -size 10 -weight normal -slant roman -underline 0 -overstrike 0
-	recentrepo = /Users/mccm06/Documents/Temp/Scratch/hello/hgw1
 
 [core]
 	excludesfile = ~/.gitignore
 	quotepath = false
 	autocrlf = input
 	safecrlf = warn
-	editor = mate -w
+	editor = vim
 
 [alias]
 	br = branch -a
@@ -182,23 +181,6 @@
 [rerere]
 	enabled = true
 
-[difftool]
-	prompt = false
-[difftool "myaraxis"]
-	cmd = araxisgitdiff ONE $LOCAL THREE FOUR $REMOTE
-[diff]
-#	tool = araxis
-	tool = myaraxis
-
-[mergetool]
-	prompt = false
-	keepBackup = false
-[mergetool "myaraxis"]
-    cmd = araxisgitmerge $PWD/$REMOTE $PWD/$BASE $PWD/$LOCAL $PWD/$MERGED
-[merge]
-#	tool = araxis
-	tool = p4merge
-
 [branch]
     # Automatically set up pull to be --rebase
     #autosetuprebase = always
@@ -207,41 +189,22 @@
 	insteadOf = "ghg://"
 	pushInsteadOf = "ghg://"
 	# Example: git clone ghg://ntschutta/emacs
-[url "git://github.com/matthewmccullough/"]
-    insteadOf = "ghgm://"
-    pushInsteadOf = "ghgm://"
-    # Example: git clone ghgm://hellogitworld
-[url "git@github.com:"]
-	insteadOf = "ghs://"
-	pushInsteadOf = "ghs://"
-[url "git@github.com:matthewmccullough/"]
-    insteadOf = "ghsm://"
-    pushInsteadOf = "ghsm://"
+[url "git://github.com/jonsmorrow/"]
+    insteadOf = "ghgj://"
+    pushInsteadOf = "ghgj://"
+    # Example: git clone ghgj://hellogitworld
 [url "https://github.com/"]
 	insteadOf = "ghh://"
 	pushInsteadOf = "ghh://"
-[url "https://github.com/matthewmccullough/"]
-    insteadOf = "ghhm://"
-    pushInsteadOf = "ghhm://"
+[url "https://github.com/jonsmorrow/"]
+    insteadOf = "ghhj://"
+    pushInsteadOf = "ghhj://"
 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-	
-[http]
-#	proxy=http://something
-
-[github]
-    # https://github.com/blog/180-local-github-config
-	user = matthewmccullough
-    #token = MOVEALONG
 [hub]
 	protocol = https
 [gist]
 	private = yes
 	browse = yes
-[ghi]
-	token = 64a818626c1c27d9abf2f9cbacc460f11e0d973f
-#[credential]
+[credential]
+	helper = osxkeychain
 #	helper = cache --timeout=300
-
